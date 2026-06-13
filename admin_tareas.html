@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/estilo_admin_tareas.css">
+</head>
+<body>
+    <main>
+        <h1>Task Manager</h1>
+        <section class="task-form">
+            <input type="text" id="task-input" placeholder="Agregar nueva tarea">
+            <button id="add-task">Agregar</button>
+        </section>
+        <section class="task-list">
+            <ul id="tasks"></ul>
+        </section>
+            <select id="user-select" placeholder="Nombre usuario...">
+                <option value="">Seleccionar usuario</option>
+                <option value="Usuario 1">Usuario 1</option>
+                <option value="Usuario 2">Usuario 2</option>
+            </select>
+        </section>
+        <section class="task-list">
+            <ul id="tasks"></ul>
+        </section>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>

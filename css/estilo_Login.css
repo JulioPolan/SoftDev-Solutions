@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    max-width: 640px;
+    margin: 4rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* ===========================
+   ESTRUCTURA VERTICAL (LOGIN)
+   =========================== */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; 
+}
+
+.row {
+    width: 100%;
+}
+
+#username,
+#password {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#username:focus,
+#password:focus {
+    border-color: #4a90e2; 
+}
+
+/* =======
+   BOTONES
+   ======= */
+
+#add-task,
+#login-button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#add-task:hover,
+#login-button:hover {
+    background: #357ac9;
+}
+
+#add-task:active,
+#login-button:active {
+    background: #132d4b;
+}
+
+/* ===============
+   LISTA DE TAREAS 
+   =============== */
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.task-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 1rem;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+    background: #fafafa;
+}
+.task-list button {
+    background: transparent;
+    border: 1px solid #e74c3c;
+    color: #e74c3c;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.task-list button:hover {
+    background: #e74c3c;
+    color: white;
+}
