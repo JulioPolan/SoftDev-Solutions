@@ -6,6 +6,11 @@ body {
     font-family: Arial, sans-serif;
     background: #f4f4f9;
     color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 main {
     max-width: 640px;
@@ -19,10 +24,14 @@ h1 {
     text-align: center;
     margin-bottom: 1.5rem;
 }
-.task-form {
+
+/* ===========================
+   ESTRUCTURA VERTICAL (LOGIN)
+   =========================== */
+.login-form {
     display: flex;
-    gap: 0.75rem;
-    margin-bottom: 1.5rem;
+    flex-direction: column;
+    gap: 1.25rem; 
 }
 #task-input,
 #user-select {
@@ -33,17 +42,39 @@ h1 {
     background-color: #fff;
     font-family: inherit;
 }
-#add-task {
+
+/* =======
+   BOTONES
+   ======= */
+
+#add-task,
+#login-button {
+    width: 100%;
     padding: 0.75rem 1rem;
     background: #4a90e2;
     color: white;
     border: none;
+    font-size: 1rem;
+    font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
+    margin-top: 1rem;
 }
-#add-task:hover {
+
+#add-task:hover,
+#login-button:hover {
     background: #357ac9;
 }
+
+#add-task:active,
+#login-button:active {
+    background: #132d4b;
+}
+
+/* ===============
+   LISTA DE TAREAS 
+   =============== */
+
 .task-list ul {
     list-style: none;
     padding: 0;
