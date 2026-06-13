@@ -33,27 +33,14 @@ h1 {
     flex-direction: column;
     gap: 1.25rem; 
 }
-
-.row {
-    width: 100%;
-}
-
-#username,
-#password {
-    width: 100%;
+#task-input,
+#user-select {
+    flex: 1;
     padding: 0.75rem 1rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
     font-family: inherit;
-    font-size: 1rem;
-    outline: none;
-    transition: border-color 0.2s;
-}
-
-#username:focus,
-#password:focus {
-    border-color: #4a90e2; 
 }
 
 /* =======
